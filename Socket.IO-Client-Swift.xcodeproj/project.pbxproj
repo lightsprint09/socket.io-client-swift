@@ -56,7 +56,7 @@
 
 /* Begin PBXFileReference section */
 		572EF2191B51F16C00EEBB58 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		572EF21D1B51F16C00EEBB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572EF21D1B51F16C00EEBB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SocketIO/Info.plist; sourceTree = "<group>"; };
 		572EF21E1B51F16C00EEBB58 /* SocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
 		572EF2241B51F16C00EEBB58 /* SocketIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		572EF2481B51F18A00EEBB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,10 +121,11 @@
 		572EF20D1B51F12F00EEBB58 = {
 			isa = PBXGroup;
 			children = (
-				572EF2461B51F18A00EEBB58 /* Tests */,
+				572EF21E1B51F16C00EEBB58 /* SocketIO.h */,
+				572EF21D1B51F16C00EEBB58 /* Info.plist */,
 				5764DF7B1B51F24A004FF46E /* Source */,
+				572EF2461B51F18A00EEBB58 /* Tests */,
 				572EF21A1B51F16C00EEBB58 /* Products */,
-				572EF21B1B51F16C00EEBB58 /* SocketIO */,
 				DD52BA265A22022906AF006D /* FAQ.md */,
 				9468A8A41F55F8BA00C8F862 /* Frameworks */,
 			);
@@ -137,23 +138,6 @@
 				572EF2241B51F16C00EEBB58 /* SocketIOTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		572EF21B1B51F16C00EEBB58 /* SocketIO */ = {
-			isa = PBXGroup;
-			children = (
-				572EF21E1B51F16C00EEBB58 /* SocketIO.h */,
-				572EF21C1B51F16C00EEBB58 /* Supporting Files */,
-			);
-			path = SocketIO;
-			sourceTree = "<group>";
-		};
-		572EF21C1B51F16C00EEBB58 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				572EF21D1B51F16C00EEBB58 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		572EF2461B51F18A00EEBB58 /* Tests */ = {
