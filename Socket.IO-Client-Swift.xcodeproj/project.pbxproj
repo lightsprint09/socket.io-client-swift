@@ -31,8 +31,6 @@
 		74ABF7771C3991C10078C657 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABF7761C3991C10078C657 /* SocketIOClientSpec.swift */; };
 		74BC45AB1D0C6675008CC431 /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC45AA1D0C6675008CC431 /* SocketClientManager.swift */; };
 		9468A8A61F55F8BB00C8F862 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9468A8A51F55F8BA00C8F862 /* Starscream.framework */; };
-		9468A8A91F55F9E900C8F862 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9468A8A81F55F9E900C8F862 /* libz.tbd */; };
-		9468A8AB1F55F9EE00C8F862 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9468A8AA1F55F9EE00C8F862 /* Security.framework */; };
 		9468A8B01F55FAA700C8F862 /* SocketAckManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74321DC91C2D939A00CF6F43 /* SocketAckManagerTest.swift */; };
 		9468A8B11F55FAA700C8F862 /* SocketBasicPacketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F124EF1BC574CF002966F4 /* SocketBasicPacketTest.swift */; };
 		9468A8B21F55FAA700C8F862 /* SocketEngineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F39ED1BD025D80026C9CC /* SocketEngineTest.swift */; };
@@ -41,6 +39,9 @@
 		9468A8B51F55FAA700C8F862 /* SocketObjectiveCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 742D150B1CA5794B00BD987D /* SocketObjectiveCTest.m */; };
 		9468A8B61F55FAA700C8F862 /* SocketParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74321DCA1C2D939A00CF6F43 /* SocketParserTest.swift */; };
 		9468A8B71F55FAA700C8F862 /* SocketSideEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472C65E1BCAC46E003CA70D /* SocketSideEffectTest.swift */; };
+		94F20DC91F59F1F300F3FE57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DC81F59F1F300F3FE57 /* Security.framework */; };
+		94F20DCC1F59F20500F3FE57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DC81F59F1F300F3FE57 /* Security.framework */; };
+		94F20DCE1F59F21D00F3FE57 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DCD1F59F21D00F3FE57 /* libz.tbd */; };
 		CEBA569A1CDA0B8200BA0389 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA56991CDA0B8200BA0389 /* SocketExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +91,8 @@
 		74BC45AA1D0C6675008CC431 /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketClientManager.swift; path = Source/SocketClientManager.swift; sourceTree = "<group>"; };
 		74F124EF1BC574CF002966F4 /* SocketBasicPacketTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketBasicPacketTest.swift; sourceTree = "<group>"; };
 		9468A8A51F55F8BA00C8F862 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
-		9468A8A81F55F9E900C8F862 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
-		9468A8AA1F55F9EE00C8F862 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		94F20DC81F59F1F300F3FE57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		94F20DCD1F59F21D00F3FE57 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		CEBA56991CDA0B8200BA0389 /* SocketExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketExtensions.swift; sourceTree = "<group>"; };
 		DD52BA265A22022906AF006D /* FAQ.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = FAQ.md; path = "Usage Docs/FAQ.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,8 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9468A8AB1F55F9EE00C8F862 /* Security.framework in Frameworks */,
-				9468A8A91F55F9E900C8F862 /* libz.tbd in Frameworks */,
+				94F20DCE1F59F21D00F3FE57 /* libz.tbd in Frameworks */,
+				94F20DCC1F59F20500F3FE57 /* Security.framework in Frameworks */,
 				9468A8A61F55F8BB00C8F862 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F20DC91F59F1F300F3FE57 /* Security.framework in Frameworks */,
 				572EF2251B51F16C00EEBB58 /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,8 +198,8 @@
 		9468A8A41F55F8BA00C8F862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9468A8AA1F55F9EE00C8F862 /* Security.framework */,
-				9468A8A81F55F9E900C8F862 /* libz.tbd */,
+				94F20DCD1F59F21D00F3FE57 /* libz.tbd */,
+				94F20DC81F59F1F300F3FE57 /* Security.framework */,
 				9468A8A51F55F8BA00C8F862 /* Starscream.framework */,
 			);
 			name = Frameworks;

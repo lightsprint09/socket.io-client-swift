@@ -98,9 +98,9 @@
     [manager removeSocketWithLabel:@"test"];
 }
 
-//- (void)testSSLSecurity {
-//    SSLSecurity* sec = [[SSLSecurity alloc] initWithUsePublicKeys:0];
-//    sec.isReady = 0;
-//}
+- (void)testSSLSecurity {
+    SSLSecurity* sec = [[SSLSecurity alloc] initWithUsePublicKeys: YES];
+    sec.isReady = 0;
+}
 
 @end
