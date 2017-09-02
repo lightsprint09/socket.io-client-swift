@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		572EF21F1B51F16C00EEBB58 /* SocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 572EF21E1B51F16C00EEBB58 /* SocketIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		572EF2251B51F16C00EEBB58 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572EF2191B51F16C00EEBB58 /* SocketIO.framework */; };
 		740CA1221C496EF700CB98F4 /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CA11F1C496EEB00CB98F4 /* SocketEngineWebsocket.swift */; };
 		74171E631C10CD240062D398 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74171E501C10CD240062D398 /* SocketAckEmitter.swift */; };
 		74171E691C10CD240062D398 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74171E511C10CD240062D398 /* SocketAckManager.swift */; };
@@ -30,28 +29,31 @@
 		747BC5991D5F943500CA5FA4 /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5981D5F943500CA5FA4 /* SocketIOClientConfiguration.swift */; };
 		74ABF7771C3991C10078C657 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABF7761C3991C10078C657 /* SocketIOClientSpec.swift */; };
 		74BC45AB1D0C6675008CC431 /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC45AA1D0C6675008CC431 /* SocketClientManager.swift */; };
+		940EFC271F5AA9CA00BC9079 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DC81F59F1F300F3FE57 /* Security.framework */; };
+		940EFC281F5AA9D200BC9079 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DCD1F59F21D00F3FE57 /* libz.tbd */; };
+		940EFC291F5AA9E800BC9079 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9468A8A51F55F8BA00C8F862 /* Starscream.framework */; };
+		943B117E1F59FAA700BD9A80 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572EF2191B51F16C00EEBB58 /* SocketIO.framework */; };
+		943B11841F59FAB100BD9A80 /* SocketAckManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74321DC91C2D939A00CF6F43 /* SocketAckManagerTest.swift */; };
+		943B11851F59FAB100BD9A80 /* SocketBasicPacketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F124EF1BC574CF002966F4 /* SocketBasicPacketTest.swift */; };
+		943B11861F59FAB100BD9A80 /* SocketEngineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F39ED1BD025D80026C9CC /* SocketEngineTest.swift */; };
+		943B11871F59FAB100BD9A80 /* SocketNamespacePacketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472C65B1BCAB53E003CA70D /* SocketNamespacePacketTest.swift */; };
+		943B11881F59FAB100BD9A80 /* SocketIOClientConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC59E1D5F9BA200CA5FA4 /* SocketIOClientConfigurationTest.swift */; };
+		943B11891F59FAB100BD9A80 /* SocketObjectiveCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 742D150B1CA5794B00BD987D /* SocketObjectiveCTest.m */; };
+		943B118A1F59FAB100BD9A80 /* SocketParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74321DCA1C2D939A00CF6F43 /* SocketParserTest.swift */; };
+		943B118B1F59FAB100BD9A80 /* SocketSideEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472C65E1BCAC46E003CA70D /* SocketSideEffectTest.swift */; };
 		9468A8A61F55F8BB00C8F862 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9468A8A51F55F8BA00C8F862 /* Starscream.framework */; };
-		9468A8B01F55FAA700C8F862 /* SocketAckManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74321DC91C2D939A00CF6F43 /* SocketAckManagerTest.swift */; };
-		9468A8B11F55FAA700C8F862 /* SocketBasicPacketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F124EF1BC574CF002966F4 /* SocketBasicPacketTest.swift */; };
-		9468A8B21F55FAA700C8F862 /* SocketEngineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F39ED1BD025D80026C9CC /* SocketEngineTest.swift */; };
-		9468A8B31F55FAA700C8F862 /* SocketNamespacePacketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472C65B1BCAB53E003CA70D /* SocketNamespacePacketTest.swift */; };
-		9468A8B41F55FAA700C8F862 /* SocketIOClientConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC59E1D5F9BA200CA5FA4 /* SocketIOClientConfigurationTest.swift */; };
-		9468A8B51F55FAA700C8F862 /* SocketObjectiveCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 742D150B1CA5794B00BD987D /* SocketObjectiveCTest.m */; };
-		9468A8B61F55FAA700C8F862 /* SocketParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74321DCA1C2D939A00CF6F43 /* SocketParserTest.swift */; };
-		9468A8B71F55FAA700C8F862 /* SocketSideEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472C65E1BCAC46E003CA70D /* SocketSideEffectTest.swift */; };
-		94F20DC91F59F1F300F3FE57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DC81F59F1F300F3FE57 /* Security.framework */; };
 		94F20DCC1F59F20500F3FE57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DC81F59F1F300F3FE57 /* Security.framework */; };
 		94F20DCE1F59F21D00F3FE57 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F20DCD1F59F21D00F3FE57 /* libz.tbd */; };
 		CEBA569A1CDA0B8200BA0389 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA56991CDA0B8200BA0389 /* SocketExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		572EF2261B51F16C00EEBB58 /* PBXContainerItemProxy */ = {
+		943B117F1F59FAA700BD9A80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 572EF20E1B51F12F00EEBB58 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 572EF2181B51F16C00EEBB58;
-			remoteInfo = "SocketIO-iOS";
+			remoteInfo = SocketIO;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,7 +61,6 @@
 		572EF2191B51F16C00EEBB58 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572EF21D1B51F16C00EEBB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SocketIO/Info.plist; sourceTree = "<group>"; };
 		572EF21E1B51F16C00EEBB58 /* SocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
-		572EF2241B51F16C00EEBB58 /* SocketIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		572EF2481B51F18A00EEBB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		740CA11F1C496EEB00CB98F4 /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SocketEngineWebsocket.swift; path = Source/SocketEngineWebsocket.swift; sourceTree = "<group>"; };
 		74171E501C10CD240062D398 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = Source/SocketAckEmitter.swift; sourceTree = "<group>"; };
@@ -90,6 +91,8 @@
 		74ABF7761C3991C10078C657 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = Source/SocketIOClientSpec.swift; sourceTree = "<group>"; };
 		74BC45AA1D0C6675008CC431 /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketClientManager.swift; path = Source/SocketClientManager.swift; sourceTree = "<group>"; };
 		74F124EF1BC574CF002966F4 /* SocketBasicPacketTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketBasicPacketTest.swift; sourceTree = "<group>"; };
+		943B11791F59FAA700BD9A80 /* SocketIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		943B117D1F59FAA700BD9A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9468A8A51F55F8BA00C8F862 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		94F20DC81F59F1F300F3FE57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		94F20DCD1F59F21D00F3FE57 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
@@ -108,12 +111,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		572EF2211B51F16C00EEBB58 /* Frameworks */ = {
+		943B11761F59FAA700BD9A80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F20DC91F59F1F300F3FE57 /* Security.framework in Frameworks */,
-				572EF2251B51F16C00EEBB58 /* SocketIO.framework in Frameworks */,
+				940EFC291F5AA9E800BC9079 /* Starscream.framework in Frameworks */,
+				940EFC281F5AA9D200BC9079 /* libz.tbd in Frameworks */,
+				940EFC271F5AA9CA00BC9079 /* Security.framework in Frameworks */,
+				943B117E1F59FAA700BD9A80 /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				572EF2191B51F16C00EEBB58 /* SocketIO.framework */,
-				572EF2241B51F16C00EEBB58 /* SocketIOTests.xctest */,
+				943B11791F59FAA700BD9A80 /* SocketIOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		572EF2461B51F18A00EEBB58 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				943B117D1F59FAA700BD9A80 /* Info.plist */,
 				74321DC91C2D939A00CF6F43 /* SocketAckManagerTest.swift */,
 				74F124EF1BC574CF002966F4 /* SocketBasicPacketTest.swift */,
 				741F39ED1BD025D80026C9CC /* SocketEngineTest.swift */,
@@ -237,23 +243,22 @@
 			productReference = 572EF2191B51F16C00EEBB58 /* SocketIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		572EF2231B51F16C00EEBB58 /* SocketIOTests */ = {
+		943B11781F59FAA700BD9A80 /* SocketIOTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 572EF2301B51F16C00EEBB58 /* Build configuration list for PBXNativeTarget "SocketIOTests" */;
+			buildConfigurationList = 943B11811F59FAA700BD9A80 /* Build configuration list for PBXNativeTarget "SocketIOTests" */;
 			buildPhases = (
-				572EF2201B51F16C00EEBB58 /* Sources */,
-				572EF2211B51F16C00EEBB58 /* Frameworks */,
-				572EF2221B51F16C00EEBB58 /* Resources */,
-				9468A8A31F55F8A200C8F862 /* ShellScript */,
+				943B11751F59FAA700BD9A80 /* Sources */,
+				943B11761F59FAA700BD9A80 /* Frameworks */,
+				943B11771F59FAA700BD9A80 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				572EF2271B51F16C00EEBB58 /* PBXTargetDependency */,
+				943B11801F59FAA700BD9A80 /* PBXTargetDependency */,
 			);
 			name = SocketIOTests;
-			productName = "SocketIO-iOSTests";
-			productReference = 572EF2241B51F16C00EEBB58 /* SocketIOTests.xctest */;
+			productName = SocketIOTests;
+			productReference = 943B11791F59FAA700BD9A80 /* SocketIOTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -263,14 +268,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0730;
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					572EF2181B51F16C00EEBB58 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					572EF2231B51F16C00EEBB58 = {
-						CreatedOnToolsVersion = 6.4;
+					943B11781F59FAA700BD9A80 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2UNP9S73JZ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -287,7 +294,7 @@
 			projectRoot = "";
 			targets = (
 				572EF2181B51F16C00EEBB58 /* SocketIO */,
-				572EF2231B51F16C00EEBB58 /* SocketIOTests */,
+				943B11781F59FAA700BD9A80 /* SocketIOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		572EF2221B51F16C00EEBB58 /* Resources */ = {
+		943B11771F59FAA700BD9A80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,22 +315,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9468A8A31F55F8A200C8F862 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "for path in $FRAMEWORK_SEARCH_PATHS\ndo\nif [ -d \"${path}/Starscream.framework\" ] && [[ $path == *\"Carthage\"* ]]; then\nexport SCRIPT_INPUT_FILE_COUNT=1\nexport SCRIPT_INPUT_FILE_0=\"${path}/Starscream.framework\"\n/usr/local/bin/carthage copy-frameworks\nbreak\nfi\ndone\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		572EF2141B51F16C00EEBB58 /* Sources */ = {
@@ -355,28 +346,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		572EF2201B51F16C00EEBB58 /* Sources */ = {
+		943B11751F59FAA700BD9A80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9468A8B71F55FAA700C8F862 /* SocketSideEffectTest.swift in Sources */,
-				9468A8B31F55FAA700C8F862 /* SocketNamespacePacketTest.swift in Sources */,
-				9468A8B01F55FAA700C8F862 /* SocketAckManagerTest.swift in Sources */,
-				9468A8B41F55FAA700C8F862 /* SocketIOClientConfigurationTest.swift in Sources */,
-				9468A8B21F55FAA700C8F862 /* SocketEngineTest.swift in Sources */,
-				9468A8B51F55FAA700C8F862 /* SocketObjectiveCTest.m in Sources */,
-				9468A8B11F55FAA700C8F862 /* SocketBasicPacketTest.swift in Sources */,
-				9468A8B61F55FAA700C8F862 /* SocketParserTest.swift in Sources */,
+				943B11891F59FAB100BD9A80 /* SocketObjectiveCTest.m in Sources */,
+				943B11881F59FAB100BD9A80 /* SocketIOClientConfigurationTest.swift in Sources */,
+				943B11871F59FAB100BD9A80 /* SocketNamespacePacketTest.swift in Sources */,
+				943B11861F59FAB100BD9A80 /* SocketEngineTest.swift in Sources */,
+				943B11841F59FAB100BD9A80 /* SocketAckManagerTest.swift in Sources */,
+				943B11851F59FAB100BD9A80 /* SocketBasicPacketTest.swift in Sources */,
+				943B118A1F59FAB100BD9A80 /* SocketParserTest.swift in Sources */,
+				943B118B1F59FAB100BD9A80 /* SocketSideEffectTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		572EF2271B51F16C00EEBB58 /* PBXTargetDependency */ = {
+		943B11801F59FAA700BD9A80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 572EF2181B51F16C00EEBB58 /* SocketIO */;
-			targetProxy = 572EF2261B51F16C00EEBB58 /* PBXContainerItemProxy */;
+			targetProxy = 943B117F1F59FAA700BD9A80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -473,11 +464,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos10.2]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -500,10 +497,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.socket.SocketIOClientSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos macosx";
 				SWIFT_INCLUDE_PATHS = $SRCROOT/zlib;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -536,12 +535,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -557,107 +559,110 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.socket.SocketIOClientSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos macosx";
 				SWIFT_INCLUDE_PATHS = $SRCROOT/zlib;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		572EF2311B51F16C00EEBB58 /* Debug */ = {
+		943B11821F59FAA700BD9A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2UNP9S73JZ;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.socket.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.freiraum.SocketIOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		572EF2321B51F16C00EEBB58 /* Release */ = {
+		943B11831F59FAA700BD9A80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2UNP9S73JZ;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvsimulator*]" = "$(PROJECT_DIR)/Carthage/Build/tvOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.socket.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.freiraum.SocketIOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -683,11 +688,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		572EF2301B51F16C00EEBB58 /* Build configuration list for PBXNativeTarget "SocketIOTests" */ = {
+		943B11811F59FAA700BD9A80 /* Build configuration list for PBXNativeTarget "SocketIOTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				572EF2311B51F16C00EEBB58 /* Debug */,
-				572EF2321B51F16C00EEBB58 /* Release */,
+				943B11821F59FAA700BD9A80 /* Debug */,
+				943B11831F59FAA700BD9A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

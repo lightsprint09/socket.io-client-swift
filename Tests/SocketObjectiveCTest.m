@@ -100,7 +100,6 @@
 
 - (void)testSSLSecurity {
     SSLSecurity* sec = [[SSLSecurity alloc] initWithUsePublicKeys: YES];
-    sec.isReady = 0;
 }
 
 @end
