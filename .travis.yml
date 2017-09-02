@@ -1,16 +1,26 @@
-language: objective-c
-xcode_project: Socket.IO-Client-Swift.xcodeproj # path to your xcodeproj folder
-xcode_scheme: SocketIO-iOS
-osx_image: xcode8.3
-branches:
-  only:
-    - master
-    - development
-before_install:
-  - brew update
-  - brew outdated xctool || brew upgrade xctool
-script:
-  - xcodebuild -project Socket.IO-Client-Swift.xcodeproj -scheme SocketIO-Mac build-for-testing -quiet
-  - xctool -project Socket.IO-Client-Swift.xcodeproj -scheme SocketIO-Mac run-tests --parallelize
-  - swift build
-#script: xcodebuild -project Socket.IO-Client-Swift.xcodeproj -scheme SocketIO-Mac build test
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode9
+      language: objective-c
+      env: "macOS"
+      script:
+        - set -o pipefail && xcodebuild -scheme SocketIO -destination 'platform=OS X' test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage NO | xcpretty
+    - os: osx
+      osx_image: xcode9
+      language: objective-c
+      env: "iOS"
+      script:
+        - set -o pipefail && xcodebuild -scheme SocketIO -destination 'platform=iOS Simulator,name=iPhone SE,OS=latest' test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage YES | xcpretty
+    - os: osx
+      osx_image: xcode9
+      language: objective-c
+      env: "tvOS"
+      script:
+        - set -o pipefail && xcodebuild -scheme SocketIO -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=latest' test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage NO | xcpretty
+    - os: osx
+      osx_image: xcode8.3
+      language: objective-c
+      env: "SPM, Carthage, CocoaPods"
+      script:
+        - swift test & pod spec lint & carthage build --no-skip-current
